@@ -12,9 +12,19 @@
     <title>Odin Recipes - Strogonoff</title>
 </head>
 <body>
+    <header>
     <div class="title">
     <h1>STROGONOFF</h1>
     </div>
+    
+    <div class="dark">
+        <p>Dark toggle</p>
+        <button onclick="mode()">
+            <ion-icon name="contrast-outline"></ion-icon>
+        </button>
+    </div>
+    </header>
+
     <div class="banner"></div>
 
     <main>
@@ -29,6 +39,7 @@
         </p>
         
         <div class="ingredients"><h1>Ingredients:</h1></div>
+        
         <ul>
             <li>3 peitos de frango cortados em cubos</li>
             <li>1 dente de alho picado</li>
@@ -42,7 +53,9 @@
             <li>1 copo de creme de leite</li>
             <li>Batata palha a gosto</li>
         </ul>
+
         <div class="steps"><h1>Steps:</h1></div>
+        
         <ol>
             <li>Em uma panela, misture o frango, o alho, a maionese, o sal e a pimenta.</li>
             <li>Em uma frigideira grande, derreta a manteiga e doure a cebola.</li>
@@ -53,5 +66,8 @@
         </ol>
     </main>
     
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

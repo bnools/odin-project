@@ -4,21 +4,24 @@
     font-family: 'Sofia Sans', sans-serif;
 }
 
-/* body img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    
-} */
+:root {
+    --main-bg-color: #FCFCFC;
+    --orange: #FF5733;
+    --red: #C70039;
+    --red-hover-btn: #f90070;
+    --red-a-btn: #920029;
+}
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    text-align: center;
 }
+
 header h1 {
+    max-width: 100%;
     margin-top: 3%;
     font-size: 4em;
 }
@@ -26,7 +29,8 @@ header h1 {
 header span {
     font-family: 'Dancing Script', sans-serif;
     font-size: 4em;
-    color: #C70039;
+    color: var(--red);
+    text-align: center;
 }
 
 main {
@@ -36,23 +40,28 @@ main {
     padding: 15px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 main img {
     margin-top: 25px;
     height: 150px;
     border-radius: 25px;
-    border: 3px solid #C70039;
+    border: 3px solid var(--red);
     transition: .3s;
 }
 
 main img:hover {
     height: 150px;
     border-radius: 25px;
-    border: 3px solid #f90070;
+    border: 3px solid var(--red-hover-btn);
     cursor: grab;
-    opacity: 0.8;
     scale: 1.05;
+}
+
+main:has(img:hover) img:not(:hover) {
+    opacity: .6;
+    scale: .98;
 }
 
 .subtitle {
@@ -74,7 +83,7 @@ fieldset:hover {
 
 a {
     text-decoration: none;
-    color: #920029;
+    color: var(--red-a-btn);
     font-size: 0.9rem;
     font-style: italic;
 }
