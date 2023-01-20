@@ -112,6 +112,10 @@ ol {
     font-size: 1.5rem
 }
 
+ol li {
+    margin-top: 15px;
+}
+
 @media (max-width:510px) {
     .dark p {
         display: none;

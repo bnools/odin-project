@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+:root {
+    --main-bg-color: #FCFCFC;
+    --orange: #FF5733;
+    --dark-btn: #2c2c2c;
+}
+
+.dark-mode {
+    --main-bg-color: #363636;
+    --orange: #ff9a48;
+    --dark-btn: #f3f3f3;
+    --textcolor: #f3f3f3;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--textcolor);
+}
+
+body h1 {
+    font-size: 3em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.dark {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.dark p {
+    font-size: 1.5rem;
+}
+
+button {
+    transform: translatey(10%);
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--dark-btn);
+    cursor: pointer;
+}
+
+/* .title {
+    margin-top: 2%;
+    margin-left: 8%;
+    border-bottom: 4px solid var(--orange);
+    width: 4rem;
+    align-items: center;
+    justify-content: flex-start;    
+} */
+
+.banner {
+    padding: 10px;
+    margin-top: 1%;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(../assets/images/Best-Hummus-banner2.jpg) ;
+    border-bottom: 10px solid var(--orange);
+}
+
+main {
+    padding: 30px;
+    max-width: 1600px;
+    display: block;
+    margin-inline: auto;
+}
+
+ul {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5rem
+}
+
+.ingredients {
+    margin-top: 20px;
+    border-bottom: 4px solid var(--orange);
+    width: 4rem;
+    font-size: 0.8rem;
+}
+
+.steps {
+    margin-top: 20px;
+    border-bottom: 4px solid var(--orange);
+    width: 4rem;
+    font-size: 0.8rem;
+}
+
+main p {
+    max-width: 1600px;
+    display: block;
+    margin: auto;
+    font-size: 1.4rem;
+}
+
+ol {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5rem
+}
+
+ol li {
+    margin-top: 15px;
+}
+
+@media (max-width:510px) {
+    .dark p {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
