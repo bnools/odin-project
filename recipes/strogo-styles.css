@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+body h1 {
+    font-size: 3em;
+}
+
+.title {
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    border-bottom: 4px solid #FF5733;
+    width: 4rem;
+    align-items: center;
+    justify-content: flex-start;    
+}
+
+.banner {
+    padding: 10px;
+    margin-top: 1%;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(../assets/images/strogonoff.jpg) ;
+    border-bottom: 10px solid #FF5733;
+}
+
+main {
+    padding: 30px;
+    max-width: 1600px;
+    display: block;
+    margin-inline: auto;
+}
+
+ul {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5rem
+}
+
+.ingredients {
+    margin-top: 20px;
+    border-bottom: 4px solid #FF5733;
+    width: 4rem;
+    font-size: 0.8rem;
+}
+
+.steps {
+    margin-top: 20px;
+    border-bottom: 4px solid #FF5733;
+    width: 4rem;
+    font-size: 0.8rem;
+}
+
+main p {
+    max-width: 1600px;
+    display: block;
+    margin: auto;
+    font-size: 1.4rem;
+}
+
+ol {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5rem
+}
+
+
+
+
+
+
+
+
+
